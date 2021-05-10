@@ -45,7 +45,9 @@ a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:black }
 #nav-icon:hover{text-decoration:none; background-color: #f7f7f7;}
 #nav-icon:hover, #nav-icon:link{text-decoration: none; background-color: #f7f7f7;}
-#gmailimages:hover, #gmailimages:active { text-decoration: underline; color:black }
+#gmailimages:hover, #gmailimages:active { text-decoration: underline; color:black; }
+.footer-link:hover, .footer-link:active { text-decoration: underline; color:gray; }
+.footer-link:visited { text-decoration: none; color:gray; }
 
 #logo{
     display: block;
@@ -170,4 +172,37 @@ button{
 button:hover{
     border-color: lightgray;
     border-width: 1px;
+}
+
+.footer-container{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #e4e4e4;
+}
+
+  .footer-container-left{
+    display: flex;
+    justify-content: flex-start;
+}
+  
+.footer-container-right{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 27px;
+}
+
+.footer{
+    padding-left: 27px;
+    color: rgb(95, 99, 104);
+}
+
+.footer-link{
+    color: gray;
 }
