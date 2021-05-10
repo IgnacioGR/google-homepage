@@ -181,7 +181,7 @@ header {
     top: -15px;
 }
 
-#nav-icon {
+#nav-icon, #nav-icon1 {
     text-decoration: none;
     display: flex;
     position: relative;
@@ -224,6 +224,7 @@ button:hover {
     display: flex;
     position: fixed;
     bottom: 0;
+    left: 0;
     background-color: gray;
     width: 100%;
     justify-content: space-between;
