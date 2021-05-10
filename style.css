@@ -35,6 +35,18 @@
     font-feature-settings: 'liga';
 }
 
+a { color:black; text-decoration: none; } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: underline; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
+#nav-icon:hover{text-decoration:none; background-color: #ececec;}
+#nav-icon:hover, #nav-icon:link{text-decoration: none; background-color: #ececec;}
+#gmailimages:hover, #gmailimages:active { text-decoration: underline; color:black }
+
 #logo{
     display: block;
     margin-left: auto;
@@ -51,13 +63,19 @@
     right: 0;
     width: 600px;
     margin-top: 30px;
-    border: 2px solid lightgrey;
+    border: 2px solid #DFE1E5;
     border-bottom-left-radius: 30px 30px;
     border-bottom-right-radius: 30px 30px;
     border-top-right-radius: 30px 30px;
     border-top-left-radius: 30px 30px;
     height: 40px;
     position: relative;
+}
+
+#search:hover{
+    -webkit-box-shadow: 0px 0px 5px 1px #ccc; 
+    -moz-box-shadow:    0px 0px 5px 1px #ccc; 
+    box-shadow:         0px 0px 5px 1px #ccc;
 }
 
 #search-icon{
@@ -88,8 +106,44 @@
     position: absolute;
     right: 10px;
     top: 10px;
-    color: lightgray;
+    color: lightblue;
     cursor: pointer;
 }
 
+#navbar{
+    display: block;
+    position:relative;
+    height: 50px;
+}
 
+ul > li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    *zoom: 1;
+    *display: inline;
+    margin: 7px;
+    font-size: 15px;
+}
+
+header{
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: -15px;
+}
+
+#nav-icon{
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 6px;
+}
