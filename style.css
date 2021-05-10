@@ -43,8 +43,8 @@ a:visited { text-decoration: none; color:black; }
 a:hover { text-decoration: underline; color:black; }
 a:focus { text-decoration: none; color:black; }
 a:hover, a:active { text-decoration: none; color:black }
-#nav-icon:hover{text-decoration:none; background-color: #ececec;}
-#nav-icon:hover, #nav-icon:link{text-decoration: none; background-color: #ececec;}
+#nav-icon:hover{text-decoration:none; background-color: #f7f7f7;}
+#nav-icon:hover, #nav-icon:link{text-decoration: none; background-color: #f7f7f7;}
 #gmailimages:hover, #gmailimages:active { text-decoration: underline; color:black }
 
 #logo{
@@ -146,4 +146,28 @@ header{
     background-color: transparent;
     border-radius: 50%;
     top: 6px;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+button{
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    margin-inline: 10px;
+    border-radius: 4px;
+    border-color: transparent;
+    border-width: 1px;
+    background-color: #f7f7f7;
+}
+
+button:hover{
+    border-color: lightgray;
+    border-width: 1px;
 }
